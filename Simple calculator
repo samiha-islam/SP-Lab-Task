@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+  int num1,num2;
+    char ch;
+    scanf("%d %d",&num1,&num2);
+    scanf(" %c",&ch);
+    switch (ch)
+    {
+    case '+':
+       printf("Addition of two numbers=%d\n",num1+num2);
+        break;
+    case '-':
+        printf("Subtraction of two numbers=%d\n",num1-num2);
+        break;
+    case '*':
+        printf("Multiplication of two numbers=%d\n",num1*num2);
+        break;
+    case '/':
+        printf("Division of two numbers=%.2f\n",(float)num1/(float)num2);
+        break;
+    default:
+        printf("Invalid operator\n");
+        break;
+    }
+
+    return 0;
+}
+
